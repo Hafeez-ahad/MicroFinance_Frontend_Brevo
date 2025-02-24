@@ -1,0 +1,12 @@
+.form-card{
+    background-image: linear-gradient( #fff1eb 0%, #ace0f9 100%);}
+
+    .form-card input[type="file"] {
+        padding: 10px 10px;
+        background-color: rgb(255, 255, 255);
+    }
+
+    .form-card input{
+        margin-left: 7px;
+    }
+    

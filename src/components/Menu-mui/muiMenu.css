@@ -1,0 +1,36 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.logoImg{
+    background-color: rgb(0, 255, 38);
+    border: 3px solid rgb(255, 255, 255);
+    border-radius:100%;
+    width: 80px;
+    padding: 5px;
+    text-align: center;
+    margin-top: 8px;
+
+}
+
+.navbarNav button{
+   border: 3px solid rgb(255, 255, 255);
+   padding: 4px 8px;
+   background-color: rgb(0, 255, 38);
+   margin-left: 5px;
+   color: black !important;
+   font-weight: bold;
+   font-size: 13.5px;
+}
+
+@media (max-width: 600px) {
+    .logoImg {
+      width: 100px; /* Adjust size */
+      height: auto;
+      display: block; /* Ensure it's visible */
+    }
+  }
+  
+

@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* 67b376686f96c1423121125b */
+.main-checkkById {
+  background-color: rgba(36, 37, 36, 0.413);
+  min-height: 100vh;
+}
+
+.input_id {
+  width: 100%;
+  text-align: center;
+padding: 10px 0px;  margin:  0px;
+}
+.input_id .btn {
+  background-color: rgb(0, 0, 0);
+  margin-left: 15px;
+  color: rgb(255, 255, 255);
+  padding: 5px 10px;
+}
+.input_id input {
+  padding: 10px 15px;
+  border-radius: 3px;
+  width: 200px;
+  height: 30px;
+  text-align: center;
+  border: none;
+  outline: none;
+  color: grey;
+}
+
+.no-data {
+  margin-top: 3%;
+  font-weight: bolder;
+  color: white;
+  text-align: center;
+  font-size: 30px;
+}
+
+.qr-code {
+  /* display: flex; */
+  justify-content: center;
+  text-align: center;
+  background-color: white;
+  width: 350px;
+  margin: auto;
+  border-radius: 1px;
+  padding: 10px;
+}
+.qr-code p:nth-of-type(1) {
+  color: black;
+  font-weight: bolder;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.download-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 0px;
+}
+.download-btn button {
+  background-color: black;
+}

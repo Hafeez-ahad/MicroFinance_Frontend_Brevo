@@ -1,0 +1,30 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.parent-admintable{
+background-color: rgb(145, 143, 143); 
+ padding: 15px;
+}
+.parent-admintable .admin-heading{
+ color: rgb(255, 255, 255); 
+   padding: 15px;
+   text-align: center;
+  }
+ 
+   .parent-admintable input:focus {
+    box-shadow: none !important;
+  } 
+  .admin-heading {
+    display: flex;
+    justify-content: space-between;
+    
+   
+  }
+  .admin-heading button{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    font-weight: bolder;
+  }

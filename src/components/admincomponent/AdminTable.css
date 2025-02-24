@@ -1,0 +1,82 @@
+/* 
+.parent-table tr{
+    border: 1px solid black !important;
+    color: red;
+}
+.parent-table th{
+    border: 1px solid rgb(115, 112, 112) !important;
+    color: rgb(19, 87, 0);
+    padding: 5px;
+   
+    font-size: 14px;
+
+}
+.parent-table tr{
+    border: 1px solid black !important;
+    color: rgb(72, 0, 255);
+    margin-top: 5px;
+} */
+
+/* AdminC.css */
+
+/* General Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+}
+
+th, td {
+  padding: 12px 15px;
+  text-align: left;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  color: #333;
+}
+
+th {
+  background-color: #f8f9fa;
+  font-weight: bold;
+}
+
+/* Row Hover Effect */
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Fixed Width and Height for Cells */
+td, th {
+  width: 120px;  /* Fixed Width */
+  height: 50px;  /* Fixed Height */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Custom Styling for Actions Column */
+td:last-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  margin: 0 5px;
+}
+
+/* Styling for Table Container */
+.container {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading Styling */
+h2 {
+  color: #444;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}

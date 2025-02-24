@@ -1,0 +1,32 @@
+.loader {
+  width: 80px;
+  height: 80px;
+  position: relative;
+  border-radius: 50%;
+  background: #005eff;
+  animation: wave 1s ease-in infinite;
+ justify-content: center;
+ align-items: center;
+}
+
+@keyframes wave {
+ 0% {  box-shadow:
+  0 0 0 0px rgb(8, 0, 255),
+  0 0 0 20px rgba(0, 89, 255, 0.2),
+  0 0 0 40px rgba(0, 36, 243, 0.6),
+  0 0 0 60px rgba(38, 0, 255, 0.4),
+  0 0 0 80px rgba(15, 15, 235, 0.2)
+  }
+  100% {  box-shadow:
+    0 0 0 80px rgba(255, 255,255, 0),
+    0 0 0 60px rgba(255, 255,255, 0.2),
+    0 0 0 40px rgba(255, 255,255, 0.4),
+    0 0 0 20px rgba(255, 255,255, 0.6),
+    0 0 0 0px rgba(255, 255,255, 1)
+  }
+}
+body{
+  background-color: rgb(255, 255, 255);
+}
+
+  

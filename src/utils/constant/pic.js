@@ -1,0 +1,1 @@
+export const loanLogoPic = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-pb15pVP6QC4p5GLH4qHd7rV_VPEP5M7ZBw&s'
