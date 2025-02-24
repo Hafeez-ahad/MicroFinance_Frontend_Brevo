@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import UserDetailForm from '../components/deetailForm/DetailForm';
+import UserDetailForm from '../components/deetailForm/DetailForm.jsx';
 
 const UserDetail = () => {
      

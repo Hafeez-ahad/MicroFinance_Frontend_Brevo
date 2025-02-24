@@ -1,6 +1,6 @@
   import React, { useEffect } from 'react'
-  import PasswordForm from '../components/newPassform/Newpass'
-  import { postReq } from '../Api/axios';
+  import PasswordForm from '../components/newPassform/Newpass.jsx'
+  import { postReq } from '../Api/axios.js';
   import {useNavigate} from 'react-router-dom'
 import { useState } from 'react';
 

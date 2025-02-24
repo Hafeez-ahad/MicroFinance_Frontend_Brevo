@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import "./calculator1.css";
-import { loanData } from "../../utils/constant/loanData";
+import { loanData } from "../../utils/constant/loanData.js";
 
 const Calculator1 = () => {
   const {

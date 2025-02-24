@@ -1,6 +1,6 @@
 import React from 'react'
 
-import AdminC from '../components/admincomponent/AdminC'
+import AdminC from '../components/admincomponent/AdminC.jsx'
 
 const AdminPage = () => {
    

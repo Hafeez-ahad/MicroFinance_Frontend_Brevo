@@ -1,7 +1,7 @@
 import React from 'react'
-import LoanCategories from '../components/loancat/loancat'
-import DrawerAppBar from '../components/Menu-mui/MuiMenu'
-import { loanLogoPic } from '../utils/constant/pic'
+import LoanCategories from '../components/loancat/loancat.jsx'
+import DrawerAppBar from '../components/Menu-mui/MuiMenu.jsx'
+import { loanLogoPic } from '../utils/constant/pic.js'
 
 
 const Home = () => {

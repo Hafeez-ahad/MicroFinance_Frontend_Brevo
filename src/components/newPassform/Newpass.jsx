@@ -2,7 +2,6 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import "./newpass.css"; // Import the CSS file
 import { ThreeDots } from "react-loader-spinner";
-import { useState } from "react";
 
 const PasswordForm = ({ sendingData,loader1 }) => {
   const {

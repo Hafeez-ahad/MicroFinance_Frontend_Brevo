@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
-import { postReq } from "../../Api/axios";
 import axios from "axios";
 import { useNavigate, useParams } from "react-router-dom";
 import toast, { Toaster } from "react-hot-toast";
@@ -43,7 +42,7 @@ const[loader,setloader] = useState(false)
 
     try {
       const response = await axios.post(
-        "http://localhost:8000/proceed/userDetail",
+        "https://micro-finance-backend.vercel.app",
         formData,
         {
           timeout:7000,

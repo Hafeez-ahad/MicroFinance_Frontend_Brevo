@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import "./loancat.css";
-import { loanData } from "../../utils/constant/loanData";
+import { loanData } from "../../utils/constant/loanData.js";
 import Pagination from "@mui/material/Pagination";
 import Stack from "@mui/material/Stack";
-import ModalUnstyled from "../modal/modal1";
+import ModalUnstyled from "../modal/modal1.jsx";
 
 const LoanCategories = () => {
   // for categories on one page 

@@ -1,11 +1,11 @@
-import Calculator1 from "../components/calculator/calculator1";
-import AdminPage from "../pages/Admin";
-import AdminLoginPage from "../pages/AdminLoginPage";
-import Home from "../pages/Home";
-import PaswordChange from "../pages/paswordChange";
-import StatusByID from "../pages/StatusByID";
-import UserDetail from "../pages/UserDetail";
-import UserStatus from "../pages/UserStatus";
+import Calculator1 from "../components/calculator/calculator1.jsx";
+import AdminPage from "../pages/Admin.jsx";
+import AdminLoginPage from "../pages/AdminLoginPage.jsx";
+import Home from "../pages/Home.jsx";
+import PaswordChange from "../pages/paswordChange.jsx";
+import StatusByID from "../pages/StatusByID.jsx";
+import UserDetail from "../pages/UserDetail.jsx";
+import UserStatus from "../pages/UserStatus.jsx";
 
 export const router = [
     {

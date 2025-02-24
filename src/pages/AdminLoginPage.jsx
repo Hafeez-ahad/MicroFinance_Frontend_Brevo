@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router";
-import AdminLoginC from "../components/adminLogin/adminLogin";
-import { postReq } from "../Api/axios";
+import AdminLoginC from "../components/adminLogin/adminLogin.jsx";
+import { postReq } from "../Api/axios.js";
 import toast from "react-hot-toast";
 import { Button } from "@mui/material";
 

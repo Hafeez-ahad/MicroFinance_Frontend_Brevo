@@ -1,6 +1,6 @@
 import React, { useEffect, useState,useRef } from "react";
 import "./User_status.css";
-import { getReq } from "../../Api/axios";
+import { getReq } from "../../Api/axios.js";
 import { useParams } from "react-router";
 import QRCode from "react-qr-code";
 

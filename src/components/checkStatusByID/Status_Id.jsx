@@ -4,7 +4,7 @@ import { Button } from "@mui/material";
 import QRCode from "react-qr-code";
 import html2canvas from "html2canvas";
 import { jsPDF } from "jspdf";
-import { getReq } from "../../Api/axios";
+import { getReq } from "../../Api/axios.js";
 
 const Status_Id = () => {
   const [getResponce, setGetResponce] = useState("");

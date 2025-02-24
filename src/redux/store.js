@@ -2,7 +2,7 @@ import { configureStore } from "@reduxjs/toolkit";
 import storage from "redux-persist/lib/storage"; // Use localStorage
 import { persistReducer, persistStore } from "redux-persist";
 import { combineReducers } from "redux";
-import counterReducer from "./slices/counterSlice";
+import counterReducer from "./slices/counterSlice.js";
 
 // Redux Persist Config
 const persistConfig = {

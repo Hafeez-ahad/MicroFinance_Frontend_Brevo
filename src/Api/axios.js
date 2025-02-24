@@ -1,4 +1,4 @@
-import apiClient from ".";
+import apiClient from "./index.js";
 import toast, { Toaster } from "react-hot-toast";
 
 export const getReq = async (path) => {
