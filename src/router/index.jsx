@@ -2,7 +2,7 @@ import Calculator1 from "../components/calculator/calculator1.jsx";
 import AdminPage from "../pages/Admin.jsx";
 import AdminLoginPage from "../pages/AdminLoginPage.jsx";
 import Home from "../pages/Home.jsx";
-import PaswordChange from "../pages/paswordChange.jsx";
+import PaswordChange from "../pages/PaswordChange.jsx";
 import StatusByID from "../pages/StatusByID.jsx";
 import UserDetail from "../pages/UserDetail.jsx";
 import UserStatus from "../pages/UserStatus.jsx";
