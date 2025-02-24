@@ -1,6 +1,4 @@
 import Calculator1 from "../components/calculator/calculator1";
-import Invoice from "../components/practise";
-import DownloadButton from "../components/practise";
 import AdminPage from "../pages/Admin";
 import AdminLoginPage from "../pages/AdminLoginPage";
 import Home from "../pages/Home";
@@ -42,8 +40,5 @@ export const router = [
         path: '/adminLogin',
         page:< AdminLoginPage/>
     },
-    {
-        path: '/practise',
-        page:< Invoice/>
-    }
+   
 ]
