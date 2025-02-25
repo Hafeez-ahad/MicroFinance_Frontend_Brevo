@@ -2,9 +2,9 @@ import React, { useEffect, useState } from "react";
 import toast from "react-hot-toast";
 import { getReq, postReq } from "../../Api/axios.js";
 import CustomizedTables from "./muiTable/MuiTable1";
-import { passwordGenerator } from "../../../../Backend/Helper/randomPassword.js";
 import { ThreeDots } from "react-loader-spinner";
 import { Navigate, useNavigate } from "react-router";
+import { passwordGenerator } from "../../utils/function/randomPassword.js";
 
 const AdminC = () => {
   const [users, setUsers] = useState(""); // State to store the array of user objects
@@ -12,7 +12,6 @@ const AdminC = () => {
   // for loader  
   const [loader1,setLoader1] = useState(true)
   
-
   const apiCall = async () => {
   
     try {
