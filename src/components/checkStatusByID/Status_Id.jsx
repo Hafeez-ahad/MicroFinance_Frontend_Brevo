@@ -1,5 +1,5 @@
 import { useState, useRef } from "react";
-import "./Status_Id.css";
+import "./status_id.css";
 import { Button } from "@mui/material";
 import QRCode from "react-qr-code";
 import html2canvas from "html2canvas";
