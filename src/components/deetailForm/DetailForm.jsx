@@ -42,7 +42,8 @@ const[loader,setloader] = useState(false)
 
     try {
       const response = await axios.post(
-        "https://micro-finance-backend.vercel.app",
+        // "http://localhost:8000/proceed/userDetail",
+        "https://micro-finance-backend.vercel.app/proceed/userDetail",
         formData,
         {
           timeout:7000,
@@ -53,7 +54,8 @@ const[loader,setloader] = useState(false)
       );
       toast.success(response?.data?.message);
       // for closing form
-      console.log(response.data.status)
+      // console.log(response.data.status)
+      console.log(response)
       console.log(id)
       if(response.data.status==201){
         navigate(`/userstatus/${id}`);
