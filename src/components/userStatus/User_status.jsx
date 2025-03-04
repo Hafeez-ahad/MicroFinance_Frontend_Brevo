@@ -1,9 +1,8 @@
 import React, { useEffect, useState,useRef } from "react";
 import "./User_status.css";
 import { getReq } from "../../Api/axios.js";
-import { useParams } from "react-router";
+import { useNavigate, useParams } from "react-router";
 import QRCode from "react-qr-code";
-
 // ==
 import html2canvas from "html2canvas";
 import { jsPDF } from "jspdf";
@@ -12,6 +11,7 @@ const User_status = () => {
   const { id } = useParams();
   const [getResponce, setGetResponce] = useState("");
   const cardRef = useRef(); // Ref for capturing the user-card div
+  const navigate = useNavigate()
 
   const callApi = async () => {
     const response = await getReq("/proceed/");
@@ -41,6 +41,7 @@ const User_status = () => {
     <>
       <div className="user-status">
         <>
+       
           <div ref={cardRef} className="user-card">
             <div className="submission-message">
               Your response is submitted <br />
@@ -49,6 +50,9 @@ const User_status = () => {
             <h5 style={{ color: "red", textAlign: "center" }}>
               NOTE: Please Take a print And save your ID
             </h5>
+            <p className="email">
+              <span className="label">Your ID:</span> {getResponce._id}
+            </p>
             <p className="email">
               <span className="label">Your Email:</span> {getResponce.email}
             </p>
@@ -101,8 +105,11 @@ const User_status = () => {
                     style={{ height: "150px", width: "150px" }}
                   />
                 </p>
+                <p> <button className="btn-close" onClick={()=>navigate("/")} >Close</button></p>
               </div>
             </div>
+
+           
           )}
         </>
       </div>

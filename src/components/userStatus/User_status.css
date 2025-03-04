@@ -39,6 +39,10 @@ padding-top: 10px;
     display: flex;
     align-items: center;
   }
+  .btn-close {
+ margin-top: 20px;
+ background-color: rgb(8, 0, 255) !important;
+  }
   
   .user-card .label {
     font-weight: bold;

@@ -39,11 +39,12 @@ const[loader,setloader] = useState(false)
     formData.append("id", id);
     // console.log("Sending FormData:", formData); // ✅ Debugging
 
+    const URL_1 = import.meta.env.VITE_URL;
 
     try {
       const response = await axios.post(
-        // "http://localhost:8000/proceed/userDetail",
-        "https://micro-finance-backend.vercel.app/proceed/userDetail",
+       ` ${URL_1}proceed/userDetail`,
+        // "https://micro-finance-backend.vercel.app/proceed/userDetail",
         formData,
         {
           timeout:7000,

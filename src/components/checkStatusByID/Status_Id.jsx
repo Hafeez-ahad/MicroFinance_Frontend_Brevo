@@ -5,6 +5,7 @@ import QRCode from "react-qr-code";
 import html2canvas from "html2canvas";
 import { jsPDF } from "jspdf";
 import { getReq } from "../../Api/axios.js";
+import { useNavigate } from "react-router";
 
 const Status_Id = () => {
   const [getResponce, setGetResponce] = useState("");
@@ -43,7 +44,7 @@ const Status_Id = () => {
       pdf.save("user-detail.pdf");
     });
   };
-
+const navigate = useNavigate()
   return (
     <div className="main-checkkById">
       <div className="input_id">
@@ -125,6 +126,8 @@ const Status_Id = () => {
                   style={{ height: "150px", width: "150px" }}
                 />
               </p>
+              <button className="btn-close" onClick={()=>navigate("/")} >Close</button>
+
             </div>
           </div>
 

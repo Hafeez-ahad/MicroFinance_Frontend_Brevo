@@ -62,6 +62,7 @@ export default function CustomizedTables({ rows, onApproveData,onRejectData,logo
       <Table sx={{ minWidth: 700 }} aria-label="customized table">
         <TableHead>
           <TableRow>
+            <StyledTableCell>User ID</StyledTableCell>
             <StyledTableCell>NAME</StyledTableCell>
             <StyledTableCell>CNIC</StyledTableCell>
             <StyledTableCell>EMAIL</StyledTableCell>
@@ -102,6 +103,7 @@ export default function CustomizedTables({ rows, onApproveData,onRejectData,logo
 
             return (
               <StyledTableRow key={row._id}>
+                <StyledTableCell align="center">{row._id}</StyledTableCell>
                 <StyledTableCell align="center">{row.name}</StyledTableCell>
                 <StyledTableCell align="center">{row.cnic}</StyledTableCell>
                 <StyledTableCell align="center">{row.email}</StyledTableCell>
