@@ -39,15 +39,17 @@ const[loader,setloader] = useState(false)
     formData.append("id", id);
     // console.log("Sending FormData:", formData); // ✅ Debugging
 
-    const URL_1 = import.meta.env.VITE_URL;
+    const URL= import.meta.env.VITE_URL;
+    console.log(URL)
+    console.log(id)
 
     try {
       const response = await axios.post(
-       ` ${URL_1}proceed/userDetail`,
+       ` ${URL}proceed//userDetail`,
         // "https://micro-finance-backend.vercel.app/proceed/userDetail",
         formData,
         {
-          timeout:7000,
+          timeout:13000,
           headers: {
             "Content-Type": "multipart/form-data", // ✅ Ensure correct header
           },

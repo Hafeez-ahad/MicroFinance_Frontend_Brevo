@@ -6,18 +6,23 @@ import html2canvas from "html2canvas";
 import { jsPDF } from "jspdf";
 import { getReq } from "../../Api/axios.js";
 import { useNavigate } from "react-router";
+import { ThreeDots } from "react-loader-spinner";
 
 const Status_Id = () => {
   const [getResponce, setGetResponce] = useState("");
   const [inputValue, setInputValue] = useState("");
   const [noData, setNoData] = useState("");
   const cardRef = useRef(); // Ref for capturing the user-card div
+  const [loader,setLoader] = useState(false)
 
   const callApi = async (id) => {
+    setLoader(true)
     console.log(id);
     const response = await getReq("/proceed/");
-    // console.log(response);
     const findById = response?.data?.data.filter((val) => val._id == id);
+    // for Loader 
+    findById && setLoader(false)
+
     console.log(findById[0]);
     setGetResponce(findById[0]);
 
@@ -26,10 +31,11 @@ const Status_Id = () => {
       setGetResponce('');
 
       setNoData("No Data Found");
+      setLoader(false)
       return;
     }
-
     setInputValue("");
+   
   };
 
   // ✅ Function to Download PDF
@@ -46,6 +52,20 @@ const Status_Id = () => {
   };
 const navigate = useNavigate()
   return (
+    <>
+   
+          { loader ?
+            <ThreeDots
+            visible={true}
+            height="150"
+            width="150"
+            color="blue"
+            radius="9"
+            ariaLabel="three-dots-loading"
+            wrapperClass="loader-div3"
+          />
+          :
+    
     <div className="main-checkkById">
       <div className="input_id">
         <input
@@ -136,7 +156,8 @@ const navigate = useNavigate()
       ) : (
         <div className="no-data">{noData}</div>
       )}
-    </div>
+    </div>}
+    </>
   );
 };
 

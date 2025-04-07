@@ -1,0 +1,28 @@
+.adminSetup-delete p {
+    display: flex;
+    margin-top: 35px;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.adminSetup-delete input{
+    background-color: rgb(193, 188, 188);
+    width: 200px;
+    outline: none !important;
+    border: none;
+    color: black;
+
+}
+.adminSetup-delete button{
+    background-color: rgb(247, 9, 9);
+    width: 125px;
+    font-size: 13px;
+}
+.adminSetup-delete input::placeholder {
+    color: #ffffff; /* Ensure it's a visible color */
+    opacity: 1;  /* Ensure it's not too transparent */
+}
+.adminSetup-delete .input-error {
+    border: 2px solid red;
+   
+  }

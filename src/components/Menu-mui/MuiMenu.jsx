@@ -75,7 +75,7 @@ function DrawerAppBar(props) {
           </Typography>
           <Box className='navbarNav' sx={{ display: { xs: 'none', sm: 'block' } }}>
             {navItems.map((item) => (
-              <Button key={item.name} sx={{ color: '#fff' }}>
+              <Button className='btn-menu' key={item.name} sx={{ color: '#fff' }}>
                 <Link to={item.path} style={{ textDecoration: 'none', color: 'white' }}>
                   {item.name}
                 </Link>

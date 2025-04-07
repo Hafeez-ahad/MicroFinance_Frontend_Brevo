@@ -3,41 +3,43 @@
 .cal-body{
 display: flex;
 justify-content: center;
-/* align-items: center; */
-padding-top: 1%;
-background-color: none;
-background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
-height: 120vh;
+align-items: center;
+height: 100vh;
+background-image: linear-gradient(to bottom, #8dcff6 0%, #aefdbd 100%); 
+height: 100vh;
 }
 
 
+
 .cal-body select{
-  /* color: white; */
-  /* font-weight: bold; */
+ 
   font-size: 18px;
-  padding: 8px;
-border-radius: 5px;  
+  padding: 8px ;
 border: none;
 outline: none;
+border-radius: 3px;
+
 }
 
 
   .calculator-container {
     
-    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);    border-radius: 15px;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    background-image: linear-gradient(to bottom, #8dcff6 0%, #aefdbd 100%); 
+       border-radius: 15px;
+    /* box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); */
     padding: 30px;
     width: 100%;
-    max-width: 400px;
+    max-width: 80%;
+    height: fit-content;
     box-sizing: border-box;
     text-align: center;
   }
   
   .calculator-title {
-    font-size: 24px;
+    font-size: 30px;
     font-weight: 600;
-    color: #4f4f4f;
-    margin-bottom: 20px;
+    color: #fcfcfc;
+ margin-top: 20px;
   }
   
   form {
@@ -55,7 +57,8 @@ margin-left: -5px;
 
   label {
     font-size: 16px;
-    color: #4f4f4f;
+    color: #000000;
+    font-weight: bold;
     margin-bottom: 10px;
     display: block;
     text-align: left;
@@ -70,6 +73,7 @@ margin-left: -5px;
     border-radius: 8px;
     outline: none;
     transition: all 0.3s ease;
+    background-color: rgb(255, 255, 255);
   }
   
   input:focus {
@@ -94,7 +98,7 @@ margin-left: -5px;
   }
   
   button:hover {
-    background-color: #656d30;
+    background-color: #21b437;
   }
   
   .error-message {
@@ -111,8 +115,9 @@ margin-left: -5px;
   
   .result {
     margin-top:15px ;
-    color: rgb(0, 17, 255);
+    color: rgb(48, 49, 48);
     font-weight: bold;
+    font-size: 18px;
     
   }
  

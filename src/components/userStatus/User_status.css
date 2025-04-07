@@ -8,7 +8,7 @@
   .user-status{
     margin: 0;
     padding: 0;
-    background-color: rgba(36, 37, 36, 0.413);
+    background-image: linear-gradient(to bottom, #8dcff6 0%, #aefdbd 100%); 
     min-height: 100vh;
 padding-top: 10px;
   }
@@ -41,8 +41,8 @@ padding-top: 10px;
   }
   .btn-close {
  margin-top: 20px;
- background-color: rgb(8, 0, 255) !important;
-  }
+ background-color: black;
+}
   
   .user-card .label {
     font-weight: bold;

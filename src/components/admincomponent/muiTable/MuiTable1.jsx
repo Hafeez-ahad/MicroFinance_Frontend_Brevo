@@ -76,6 +76,7 @@ export default function CustomizedTables({ rows, onApproveData,onRejectData,logo
             <StyledTableCell>GUARANTOR 2 CNIC</StyledTableCell>
             <StyledTableCell>GUARANTOR 2 EMAIL</StyledTableCell>
             <StyledTableCell>GUARANTOR 2 LOCATION</StyledTableCell>
+            <StyledTableCell>SLIP URL</StyledTableCell>
             <StyledTableCell>STATUS</StyledTableCell>
             <StyledTableCell>ADMIN ACTIONS</StyledTableCell>
           </TableRow>
@@ -117,6 +118,7 @@ export default function CustomizedTables({ rows, onApproveData,onRejectData,logo
                 <StyledTableCell align="center">{row.guarantor2CNIC}</StyledTableCell>
                 <StyledTableCell align="center">{row.guarantor2Email}</StyledTableCell>
                 <StyledTableCell align="center">{row.guarantor2Location}</StyledTableCell>
+                <StyledTableCell align="center">{row.pictureId}</StyledTableCell>
                 <StyledTableCell
                   style={{
                     color: "white",

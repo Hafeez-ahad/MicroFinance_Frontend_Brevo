@@ -1,23 +1,4 @@
-/* 
-.parent-table tr{
-    border: 1px solid black !important;
-    color: red;
-}
-.parent-table th{
-    border: 1px solid rgb(115, 112, 112) !important;
-    color: rgb(19, 87, 0);
-    padding: 5px;
-   
-    font-size: 14px;
 
-}
-.parent-table tr{
-    border: 1px solid black !important;
-    color: rgb(72, 0, 255);
-    margin-top: 5px;
-} */
-
-/* AdminC.css */
 
 /* General Table Styling */
 table {
@@ -79,4 +60,12 @@ h2 {
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 20px;
+}
+
+.No-data-div2{
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+  margin-top: 40px;
+  font-size:30px; 
 }

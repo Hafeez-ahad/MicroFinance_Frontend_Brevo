@@ -30,7 +30,39 @@
       width: 100px; /* Adjust size */
       height: auto;
       display: block; /* Ensure it's visible */
+
     }
+    .logo-pic-menu {
+      width: 70px !important;
+      /* top: -3px !important ; */
+
+    }
+    .css-1ygil4i-MuiToolbar-root {
+      height: 90px;
+    }
+    .css-1umw9bq-MuiSvgIcon-root {
+      font-size: 60px !important ;
   }
+  /* faltu  */
+  .css-rizt0-MuiTypography-root {
+   
+    display: none;
+}
+/* .css-xi606m {
+  text-align: left;
+  background-color: rgb(100, 100, 245);
+  height: 100vh;
+} */
+  .css-rizt0-MuiTypography-root{
+   font-size: 25px !important;
+   text-decoration: underline;
+   text-decoration-thickness: 3px; /* Thickness of the underline */
+   text-decoration-color: rgb(37, 247, 0); /* Color of the underline */
+   text-underline-offset: 10px;
+   color: blue;
+
+  }
+  }
+
   
 
